@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a8553dbf-05b0-46a2-a06b-67e4ce98421e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Infrastructure\Restaurant.Infrastructure.csproj" />
+    <ProjectReference Include="..\Restaurant.Persistence\Restaurant.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
